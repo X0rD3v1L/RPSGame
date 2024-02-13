@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,100;1,200;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
 
 * {
   margin: 0;
@@ -18,41 +19,31 @@ body {
 }
 h1 {
   font-weight: 900;
+  font-family: "Sixtyfour", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "BLED" 0, "SCAN" 0;
   font-size: 30px;
   font-style: bold;
   margin: 3px 200px;
   align-items: center;
   justify-content: center;
   letter-spacing: 1px;
-  color: whitesmoke;
+  color: black;
 }
 
-.container {
+.container-inner {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
-button {
-  top: 10px;
-  right: 10px;
-  background-color: #4caf50;
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-button:hover {
-  background-color: #45a049;
-}
-.container button:hover {
+.container-inner button:hover {
   background-color: #45a049;
 }
 
-.container .section {
-  width: 350px;
+.container-inner .section {
+  width: 400px;
   margin: 80px 50px 5px 50px;
 }
 .section {
@@ -84,10 +75,10 @@ button:hover {
   height: 220px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
-}
-.show {
   font-size: 100px;
+  flex-direction: column;
 }
+
 h2 {
   display: flex;
   font-weight: bold;
@@ -96,6 +87,7 @@ h2 {
   justify-content: center;
   width: 900px;
   height: 100px;
+  margin-left: 250px;
 }
 .attack-btn {
   display: flex;
@@ -103,7 +95,8 @@ h2 {
   justify-content: center;
   width: 900px;
   height: 100px;
-  padding-top: 5px;
+  padding-top: 55px;
+  margin-left: 250px;
 }
 .attack-btn button {
   margin: 0 30px;
@@ -122,17 +115,40 @@ button:active {
   box-shadow: 0 5px 5px rgb(51, 51, 51);
   transform: translateY(4px);
 }
-p{
-    color: whitesmoke;
+p {
+  color: whitesmoke;
 }
 input[type="text"] {
-    padding: 10px 15px; /* Adjust padding as needed */
-    border: 1px solid #ccc; /* Border color */
-    border-radius: 5px; /* Border radius */
-    font-size: 16px; /* Font size */
-    outline: none; /* Remove default focus outline */
-  }
-  
-  input[type="text"]::placeholder {
-    color: #aaa; /* Placeholder text color */
-  }
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+.reveal {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.timer {
+  color: aliceblue;
+  font-size: medium;
+}
+.Winner {
+  padding: 10px;
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.css-lzr3bi-LoadingOverlayWrapperBase {
+  background: transparent !important;
+}
