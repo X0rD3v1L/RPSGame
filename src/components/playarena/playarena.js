@@ -18,7 +18,7 @@ function PlayArena({loaderCallback}) {
   const j1Timeout                                             = useRef();
   const navigate                                              = useNavigate();
   const { state }                                             = useLocation();
-  const selection                                             = ["🧱", "📰", "✂️", "🖖", "🦎"];
+  const selection                                             = ["🪨", "📰", "✂️", "🖖", "🦎"];
   const [winner, setWinner]                                   = useState(null);
   const [revealMove, setRevealMove]                           = useState(false);
   const [isGameEnded, setIsGameEnded]                         = useState(false);
