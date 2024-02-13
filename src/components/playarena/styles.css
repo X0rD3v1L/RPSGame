@@ -148,7 +148,3 @@ input[type="text"]::placeholder {
   border-radius: 5px;
   margin-top: 10px;
 }
-
-.css-lzr3bi-LoadingOverlayWrapperBase {
-  background: transparent !important;
-}

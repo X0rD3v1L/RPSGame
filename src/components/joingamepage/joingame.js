@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import './joingame.css';
 import { ethers } from "ethers";
 import io from "socket.io-client";
-import playarenaABI from "../../artifacts/contracts/RPS.sol/Hasher.json";
 import gameContractABI from "../../artifacts/contracts/RPS.sol/RPS.json";
 import Countdown, { zeroPad } from "react-countdown";
 
@@ -176,11 +175,10 @@ const JoinGame = ({loaderCallback}) => {
                 <div className="row justify-content-center h-100">
                   <div className="col-md-4 col-xl-3 chat">
                     <div className="card mb-sm-3 mb-md-0 contacts_card">
-                      <div className="card-body contacts_body">
                         <ul className="contacts">
                           {actives.map((user, index) => (
                             <li key={index} className={selectedOpponent === user ? "active" : (user === connectedWalletAddress) ? "inactive notAllowed": "inactive"} onClick={() => { if (user !== connectedWalletAddress) {setSelectedOpponent(user)}}}>
-                              <div className="d-flex bd-highlight">
+                              <div className="d-flex bd-highlight inline">
                                 <div className="img_cont">
                                   <img src="https://therichpost.com/wp-content/uploads/2020/06/avatar2.png" className="rounded-circle user_img" alt="avatar"/>
                                   <span className="online_icon"></span>
@@ -194,7 +192,6 @@ const JoinGame = ({loaderCallback}) => {
                             ))
                           }
                         </ul>
-                      </div>
                     </div>
                   </div>
                 </div>

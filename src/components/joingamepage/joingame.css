@@ -84,7 +84,7 @@ html {
 .contacts li {
   width: 100% !important;
   padding: 5px 10px;
-  margin-bottom: 15px !important;
+  margin-bottom: 8px !important;
   cursor: pointer;
 }
 .active {
@@ -299,11 +299,9 @@ button {
   transition: background-color 0.3s ease;
 }
 
-
 .container-main {
   display: flex;
 }
-
 
 .container .section {
   width: 350px;
@@ -336,6 +334,9 @@ button {
   width: 900px;
   height: 100px;
   margin-top: 15px;
+}
+.inline {
+  display: flex !important;
 }
 .attack-btn-joingame button {
   margin: 0 30px;
